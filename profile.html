@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile | Lost & Found</title>
+  <link rel="shortcut icon" href="lost&found.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="navbar-left">
+      <img src="lost&found.jpg" alt="Logo" class="logo" style="width: auto; height: 50px;">
+      <div class="auth-links">
+        <a href="signin.html">Sign In</a> / <a href="signup.html">Sign Up</a>
+      </div>
+    </div>
+
+    <nav class="navbar-right">
+      <a href="home.html">Home</a>
+      <a href="report-lost.html">Report Lost</a>
+      <a href="report-found.html">Report Found</a>
+      <a href="profile.html" class="active">Profile</a>
+      <a href="#">Logout</a>
+    </nav>
+  </header>
+
+  <!-- Profile Section -->
+  <section class="profile-section">
+    <div class="profile-card">
+      <img src="https://via.placeholder.com/120" alt="User Avatar" class="avatar">
+      <h2 id="username"></h2>
+      <p id="email"></p>
+      <button class="edit-btn" onclick="editProfile()">Edit Profile</button>
+    </div>
+
+    <div class="profile-details">
+      <h3>Account Details</h3>
+      <ul>
+        <li><strong>Username:</strong> aditya_d</li>
+        <li><strong>Joined:</strong> January 2025</li>
+        <li><strong>Location:</strong> Found City</li>
+      </ul>
+    </div>
+
+    <div class="activity-section">
+      <h3>Your Activity</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Action</th>
+            <th>Item</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>20 Aug 2025</td>
+            <td>Reported Lost</td>
+            <td>Wallet</td>
+            <td>Open</td>
+          </tr>
+          <tr>
+            <td>22 Aug 2025</td>
+            <td>Reported Found</td>
+            <td>Umbrella</td>
+            <td>Returned</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Lost & Found. All rights reserved.</p>
+  </footer>
+
+</body>
+<script src="profile.js"></script>
+</html>

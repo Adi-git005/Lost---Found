@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In - Lost & Found</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+    }
+
+    header {
+      background: #2ecc71; /* green theme */
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+    }
+
+    header .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    header .logo img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%; /* makes it circular */
+        object-fit: cover;  /* keeps image inside circle */
+        border: 2px solid white; /* optional: adds white border around logo */
+    }
+
+    header h2 {
+      margin: 0;
+      font-size: 20px;
+      color: white;
+      user-select: none;
+    }
+
+    .signin-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc(100vh - 70px);
+    }
+
+    .signin-box {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      width: 350px;
+      text-align: center;
+    }
+
+    .signin-box h2 {
+      margin-bottom: 20px;
+      color: #2ecc71;
+    }
+
+    .signin-box input {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+
+    .signin-box button {
+      width: 100%;
+      padding: 12px;
+      background: #2ecc71;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .signin-box button:hover {
+      background: #27ae60;
+    }
+
+    .signin-box p {
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .signin-box a {
+      color: #2ecc71;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: black;
+      color: white;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="lost&found.jpg" alt="Logo">
+      <a href="home.html"><h2>Lost & Found</h2></a>
+    </div>
+  </header>
+
+  <!-- Sign In Box -->
+  <div class="signin-container">
+    <div class="signin-box">
+      <h2>Sign In</h2>
+      <form action="home.html" method="POST">
+        <input type="email" placeholder="Email Address" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Sign In</button>
+      </form>
+      <p>Don’t have an account? <a href="signup.html">Sign Up</a></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Lost & Found. All rights reserved.
+  </footer>
+</body>
+</html>

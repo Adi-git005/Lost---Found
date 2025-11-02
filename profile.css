@@ -1,0 +1,144 @@
+/* General Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.navbar-left img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%; /* makes it circular */
+  object-fit: cover;  /* keeps image inside circle */
+  border: 2px solid white; /* optional: adds white border around logo */
+}
+
+.auth-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.navbar-right a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.navbar-right .active {
+  color: #28a745; /* Green active link */
+}
+
+/* Profile Section */
+.profile-section {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 30px;
+}
+
+.profile-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-card .avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.profile-card h2 {
+  margin: 10px 0 5px;
+  color: #28a745;
+}
+
+.edit-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.edit-btn:hover {
+  background: #218838;
+}
+
+.profile-details, .activity-section {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+
+.profile-details h3, .activity-section h3 {
+  color: #28a745;
+  margin-bottom: 15px;
+}
+
+.profile-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.profile-details li {
+  margin-bottom: 10px;
+}
+
+/* Activity Table */
+.activity-section table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.activity-section th, .activity-section td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.activity-section th {
+  background: #28a745;
+  color: #fff;
+}
+
+.activity-section tr:hover {
+  background: #f1f1f1;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+}
